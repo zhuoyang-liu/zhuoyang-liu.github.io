@@ -547,6 +547,51 @@
 </tr>
 
 
+<tr onmouseout="h2r_stop()" onmouseover="h2r_start()" bgcolor="#ffffd0">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='h2r_image'>
+        <img src='images/h2r_teaser.png' width=100%>
+      </div>
+      <img src='images/h2r_method.png' width=100%>
+    </div>
+    <script type="text/javascript">
+      function h2r_start() {
+        document.getElementById('h2r_image').style.opacity = "0";
+      }
+      function h2r_stop() {
+        document.getElementById('h2r_image').style.opacity = "1";
+      }
+      h2r_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:80%;vertical-align:middle">
+    <a href="https://sites.google.com/view/h2r-robotics">
+      <span class="papertitle">H2R: A Human-to-Robot Data Augmentation for Robot Pre-training from Videos</span>
+    </a>
+    <br>
+    <a href="">Guangrun Li<sup>*</sup></a>,
+    <a href="">Yaoxu Lyu<sup>*</sup></a>, 
+    <strong>Zhuoyang Liu<sup>*</sup></strong>, 
+    <a href="https://scholar.google.com/citations?hl=en&user=iXENYMYAAAAJ">Chengkai Hou<sup>*</sup></a>,
+    <a href="https://jieyuz2.github.io/">Jieyu Zhang</a>, 
+    <a href="https://www.shanghangzhang.com/">Shanghang Zhang</a>
+    <br>
+    <em>CVPR workshop</em>, 2025
+    <br>
+    <a href="https://sites.google.com/view/h2r-robotics">project page</a>
+    /
+    <a href="https://arxiv.org/abs/2505.11920">arXiv</a>
+    /
+    <a href="https://huggingface.co/datasets/yaoxu789/H2R-1M">dataset</a>
+    <p></p>
+    <p>
+      H2R is a simple data augmentation technique for robot pre-training from videos, which extracts the human hands from first-person videos and replaces them with those of different robots to generate new video data for pre-training.
+    </p>
+  </td>
+</tr>
+
+
 
     <tr onmouseout="ever_stop()" onmouseover="ever_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
