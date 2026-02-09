@@ -496,7 +496,7 @@
 </tr>
 
 
-<tr onmouseout="threedsvla_stop()" onmouseover="threedsvla_start()" bgcolor="#ffffd0">
+<tr onmouseout="threedsvla_stop()" onmouseover="threedsvla_start()" >
   <td style="padding:16px;width:20%;vertical-align:middle">
     <div class="one">
       <div class="two" id='threedsvla_image'>
@@ -538,6 +538,63 @@
     <p></p>
     <p>
       3DS-VLA enhances pretrained 2D vision-language models (VLMs) with comprehensive 3D awareness, enabling the prediction of robust end-effector poses.
+    </p>
+  </td>
+</tr>
+
+
+<tr onmouseout="hybridvla_stop()" onmouseover="hybridvla_start()" bgcolor="#ffffd0">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='hybridvla_image' style="opacity: 1;">
+        <img src='images/hybridvla_teaser.png' width=100%>
+      </div>
+      <video width=100% height=100% muted autoplay loop>
+        <source src="images/hybridvla_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <script type="text/javascript">
+      function hybridvla_start() {
+        document.getElementById('hybridvla_image').style.opacity = "0";
+      }
+      function hybridvla_stop() {
+        document.getElementById('hybridvla_image').style.opacity = "1";
+      }
+      hybridvla_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:80%;vertical-align:middle">
+    <a href="https://hybrid-vla.github.io/">
+      <span class="papertitle">HybridVLA: Collaborative Diffusion and Autoregression in a Unified Vision-Language-Action Model</span>
+    </a>
+    <br>
+    <a href="https://liujiaming1996.github.io/">Jiaming Liu<sup>*</sup></a>,
+    <a href="https://scholar.google.com.hk/citations?user=tT03tysAAAAJ&hl=zh-CN&oi=sra">Hao Chen<sup>*</sup></a>, 
+    <strong>Zhuoyang Liu<sup>*</sup></strong>, 
+    <a href="https://scholar.google.com/citations?user=fUK2YhkAAAAJ&hl=zh-CN">Pengju An<sup>*</sup></a>, 
+    <a href="https://zrrskywalker.github.io/">Renrui Zhang</a>,
+    <a href="http://guchenyang.site/">Chenyang Gu</a>, </br>
+    <a href="https://clorislili.github.io/clorisLi/">Xiaoqi Li</a>, 
+    <a href="https://ziyuguo99.github.io/">Ziyu Guo</a>,
+    <a href="https://cscsx.github.io/">Sixiang Chen</a>, 
+    <a href="https://scholar.google.com/citations?hl=zh-CN&user=AUVUNusAAAAJ">Mengzhen Liu</a>, 
+    <a href="https://scholar.google.com/citations?hl=en&user=iXENYMYAAAAJ">Chengkai Hou</a>,
+    <a href="https://scholar.google.com/citations?hl=zh-CN&user=QsQMFZkAAAAJ">Mengdi Zhao</a>, </br>
+    <a href="https://kaichen-z.github.io/">Kaichen Zhou</a>,
+    <a href="https://scholar.google.com/citations?user=OFdytjoAAAAJ&hl=en">Pheng-Ann Heng</a>,
+    <a href="https://www.shanghangzhang.com/">Shanghang Zhang</a>
+    <br>
+    <em>ICLR</em>, 2026
+    <br>
+    <a href="https://hybrid-vla.github.io/">project page</a>
+    /
+    <a href="https://arxiv.org/abs/2503.10631">arXiv</a>
+    /
+    <a href="https://github.com/PKU-HMI-Lab/Hybrid-VLA">code</a>
+    <p></p>
+    <p>
+      HybridVLA innovatively integrates diffusion and autoregressive action prediction within a single LLM, fully leveraging the continuity and probabilistic nature of diffusion alongside the reasoning capabilities of autoregressive modeling.
     </p>
   </td>
 </tr>
