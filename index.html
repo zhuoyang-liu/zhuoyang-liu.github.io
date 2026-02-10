@@ -56,11 +56,11 @@
 
 <tr onmouseout="last0_stop()" onmouseover="last0_start()" bgcolor="#ffffd0"> 
   <td style="padding:16px;width:20%;vertical-align:middle"> 
-    <div class="one">
-      <div class="two" id='last0_image' style="opacity: 1;"> 
-        <img src='images/last0_teaser.png' width=100%>
+    <div class="one" style="position: relative; width: 100%; height: auto;">
+      <div class="two" id='last0_image' style="opacity: 1; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2;"> 
+        <img src='images/last0_teaser.png' style="width: 100%; height: 100%; object-fit: cover;">
       </div>
-      <video width=100% height=100% muted autoplay loop>
+      <video video width=100% height=100% muted autoplay loop style="display: block; object-fit: cover;">
         <source src="images/last0_video.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
