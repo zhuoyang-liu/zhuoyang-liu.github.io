@@ -112,14 +112,16 @@
 
 <tr onmouseout="manualvla_stop()" onmouseover="manualvla_start()">
   <td style="padding:16px;width:20%;vertical-align:middle">
-    <div class="one">
-      <div class="two" id='manualvla_image' style="opacity: 1;">
-        <img src='images/manualvla_teaser.png' width=100%>
+    <div class="one" style="position: relative; width: 100%;">
+      <div class="two" id='manualvla_image' style="opacity: 1; position: relative; z-index: 2;">
+          <img src='images/manualvla_teaser.png' width="100%" style="display:block;">
       </div>
-      <video width=100% height=100% muted autoplay loop>
-        <source src="images/manualvla_video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; z-index: 1;">
+          <video width="100%" muted autoplay loop style="display:block;">
+              <source src="images/manualvla_video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+      </div>
     </div>
     <script type="text/javascript">
       function manualvla_start() {
