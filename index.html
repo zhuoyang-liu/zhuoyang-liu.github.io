@@ -48,6 +48,7 @@
       <td style="padding:16px;width:100%;vertical-align:middle">
         <h2>News</h2>
         <ul style="line-height: 1.5;">
+          <li><strong>[2026.10]</strong> We released <a href="https://agentic-wam.github.io/">AW-0: Agentic World Action Models</a>, unifying code-based skill planning, future video prediction, and robot actions. <a href="https://github.com/ZhuoyangLiu2005/agentic-wam">Code</a> and <a href="https://huggingface.co/miniFranka/agentic-wam-pretrain-yamego3k-soup-e1">model weights</a> are available!</li>
           <li><strong>[2025.09]</strong> Two papers (<a href="https://tactile-reactive-dexterous.github.io/">T-Rex</a>, <a href="https://ftp1-policy.github.io/">FTP-1</a>) are accepted to CoRL 2026!</li>
           <li><strong>[2025.07]</strong> Two papers (<a href="https://twinrl.github.io/">TwinRL</a>, <a href="https://deepvision-vla.github.io/">Look Before Acting</a>) are accepted to ACMMM 2026!</li>
           <li><strong>[2026.06]</strong> I am awarded the <span style="color: red; font-weight: bold;">SenseTime Scholarship 2026</span>! (30 recipients nationwide)</li>
@@ -76,6 +77,71 @@
   </tr>
 </tbody></table>
 <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+<tr id="aw0" onmouseout="aw0_stop()" onmouseover="aw0_start()" onfocusin="aw0_start()" onfocusout="aw0_stop()" bgcolor="#ffffd0">
+  <td style="padding:16px;width:20%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id="aw0_image" style="opacity:1;display:flex;align-items:center;background:#ffffd0;">
+        <img src="images/aw0_teaser.webp" width="160" height="128" alt="AW-0 framework: code, video, and action experts with joint denoising" style="width:100%;height:auto;">
+      </div>
+      <video width="160" height="160" muted autoplay loop playsinline preload="metadata" poster="images/aw0_teaser.webp" aria-label="AW-0 demonstrations of real-world robot manipulation" style="width:100%;height:100%;object-fit:contain;">
+        <source src="images/aw0_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <script type="text/javascript">
+      function aw0_start() {
+        document.getElementById('aw0_image').style.opacity = "0";
+      }
+
+      function aw0_stop() {
+        document.getElementById('aw0_image').style.opacity = "1";
+      }
+      aw0_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:80%;vertical-align:middle">
+    <a href="https://agentic-wam.github.io/">
+      <span class="papertitle">AW-0: Agentic World Action Models</span>
+    </a>
+    <br>
+    <strong>Zhuoyang Liu<sup>*</sup></strong>,
+    <a href="https://dantong88.github.io/">Dantong Niu<sup>*&dagger;</sup></a>,
+    <a href="https://www.linkedin.com/in/botong-zhang/">Botong Zhang<sup>*</sup></a>,
+    <a href="https://boning-shao.github.io/">Boning Shao<sup>*</sup></a>,
+    <a href="https://scholar.google.com/citations?hl=en&amp;user=cdL5PqgAAAAJ">Jing Wang</a>,
+    <a href="https://ruijiezheng.com/">Ruijie Zheng</a>,
+    <a href="https://yuvansharma.github.io/">Yuvan Sharma</a>,
+    <a href="https://runyulu.com/">Runyu Lu</a>,
+    <a href="https://liujiaming1996.github.io/">Jiaming Liu</a>,
+    <a href="https://zrrskywalker.github.io/">Renrui Zhang</a>,
+    <a href="https://roeiherz.github.io/">Roei Herzig</a>,
+    <a href="https://yutongbai.com/">Yutong Bai</a>,
+    <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/goldberg.html">Ken Goldberg</a>,
+    <a href="https://faculty.cc.gatech.edu/~danfei/">Danfei Xu</a>,
+    <a href="https://yukezhu.me/">Yuke Zhu<sup>&dagger;</sup></a>,
+    <a href="https://guanzhi.me/">Guanzhi Wang<sup>&dagger;</sup></a>,
+    <a href="https://jimfan.me/">Linxi &ldquo;Jim&rdquo; Fan<sup>&dagger;</sup></a>,
+    <a href="https://people.eecs.berkeley.edu/~trevor/">Trevor Darrell<sup>&dagger;</sup></a>
+    <br>
+    <span style="font-size:12px;"><sup>*</sup> Equal contribution &nbsp; <sup>&dagger;</sup> Equal advising</span>
+    <br>
+    <em>arXiv</em>, 2026
+    <br>
+    <a href="https://agentic-wam.github.io/">project page</a>
+    /
+    <a href="https://arxiv.org/abs/2610.30136">arXiv</a>
+    /
+    <a href="https://github.com/ZhuoyangLiu2005/agentic-wam">code</a>
+    /
+    <a href="https://huggingface.co/miniFranka/agentic-wam-pretrain-yamego3k-soup-e1">model</a>
+    <p></p>
+    <p>
+      An agentic world action model that jointly generates reusable skill programs, future video, and robot actions in a unified Mixture-of-Transformers architecture, connecting code-based planning with physical prediction and control.
+    </p>
+  </td>
+</tr>
 
 
 <tr onmouseout="trex_stop()" onmouseover="trex_start()" bgcolor="#ffffd0">
